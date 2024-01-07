@@ -1,0 +1,5 @@
+<app-input-filho [titulo] ="tituloPai" (selectionChanged)="onBikeSelect($event)"></app-input-filho>
+
+<div *ngIf="selectedBike">
+  <img [src]="'assets/images/' + selectedBike + '.jpg'" [alt]="selectedBike">
+</div>
